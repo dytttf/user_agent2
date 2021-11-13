@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "user_agent2"
+version = "0.1.0"
+description = "inherit from user_agent"
+authors = ["dytttf <dytttf@foxmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+user-agent = "^0.1.9"
+
+[tool.poetry.dev-dependencies]
+requests = "^2.26.0"
+bs4 = "^0.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "aliyun"
+default = true
+url = "https://mirrors.aliyun.com/pypi/simple/"
