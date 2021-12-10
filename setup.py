@@ -1,7 +1,7 @@
 # coding:utf8
 from setuptools import setup, find_packages
 
-version = "2021.11.01"
+version = "2021.12.11"
 
 setup(
     name="user_agent2",
@@ -14,9 +14,9 @@ setup(
     url="https://github.com/dytttf/user_agent2",
     packages=find_packages(),
     install_requires=[
-        "user_agent",
+        "user_agent==0.1.10",
     ],
     license="BSD",
-    classifiers=(),
+    classifiers=[],
     keywords=["user_agent"],
 )

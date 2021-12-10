@@ -16,7 +16,7 @@ def show_chrome_version():
         version = re.search("(\d+\.\d+\.\d+\.\d+)", version)
         if not version:
             continue
-        version = version.group(1).split(".")
+        version = version.group(1)
         date = date.split(".")
         date.reverse()
         date = "-".join(date)
@@ -27,7 +27,7 @@ def show_chrome_version():
 
     for date in dates:
         version = version_date_info[date]
-        print("({}, {}, {}),  # {}".format(version[0], version[2], version[2], date))
+        print("'{}',  # {}".format(version, date))
 
     return
 
@@ -45,4 +45,4 @@ def test():
     return
 
 
-test()
+# test()
